@@ -38,7 +38,7 @@
 
 .Quick-navigation-item::after{
   color: #957FEF;
-  font-size: 1.6em;
+  font-size: 2em;
 }
 .Quick-navigation-item:hover,
 .Quick-navigation-item.current {
