@@ -346,6 +346,34 @@
 
 	<script>
 
+var scrollToTopBtn = document.querySelector('.Scroll-to-top'),
+        steps = document.querySelectorAll('.js-scroll-step'),
+        navigationContainer = document.querySelector('.Quick-navigation'),
+        links = navigationContainer.querySelectorAll('a'),
+        progressIndicator = document.querySelector('.Scroll-progress-indicator');
+
+    ScrollManager.init({
+        steps: steps,
+        scrollToTopBtn: scrollToTopBtn,
+        navigationContainer: navigationContainer,
+        links: links,
+      
+        // Customize onScroll behavior
+        onScroll: function () {
+            var percentage = ScrollManager.scrollPercentage();
+            percentage >= 90 ? scrollToTopBtn.classList.add('visible') : scrollToTopBtn.classList.remove('visible');
+
+            if (percentage >= 10) {
+                progressIndicator.innerHTML = percentage + "%";
+                progressIndicator.classList.add('visible');
+            } else {
+                progressIndicator.classList.remove('visible');
+            }
+        },
+    });
+ 
+
+
 		function on() {
 			document.getElementById("overlay").style.display = "block";
 		}
