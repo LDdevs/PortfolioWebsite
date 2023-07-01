@@ -744,6 +744,7 @@ p {
 
 #githublinks {
   font-size: 12px;
+
 }
 
 #text {
@@ -805,7 +806,7 @@ social-media {
 
 /* pop-up text */
 
-a span {
+#SMicons span {
   color: #666;
   position: absolute;
   font-family: sans-serif;
