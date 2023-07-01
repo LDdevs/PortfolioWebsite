@@ -659,7 +659,7 @@ p {
   transform: translateY(-7px);
 }
 
-#overlay {
+#overlay #overlay1{
   position: fixed;
   display: none;
   width: 100vw;
