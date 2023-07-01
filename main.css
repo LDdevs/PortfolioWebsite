@@ -742,6 +742,10 @@ p {
   cursor: pointer;
 }
 
+#githublinks {
+  font-size: 28px;
+}
+
 #text {
   position: absolute;
   top: 50%;
