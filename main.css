@@ -673,7 +673,7 @@ p {
   cursor: pointer;
 }
 
-#text #text1 {
+#text {
   position: absolute;
   top: 50%;
   left: 50%;
