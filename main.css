@@ -744,7 +744,7 @@ p {
 
 #githublinks {
   font-size: 12px;
-
+  content: '\f113';
 }
 
 #text {
