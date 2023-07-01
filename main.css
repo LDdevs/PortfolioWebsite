@@ -746,6 +746,7 @@ p {
   font-size: 12px;
   content: '\f113';
   color: #FFF;
+  z-index: 10;
 }
 
 #text {
