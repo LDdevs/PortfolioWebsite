@@ -35,6 +35,11 @@
     padding: 0.5em;
     display: block;
 }
+
+.Quick-navigation-item::after{
+  color: #957FEF;
+  font-size: 1.6em;
+}
 .Quick-navigation-item:hover,
 .Quick-navigation-item.current {
   color: #957FEF;
