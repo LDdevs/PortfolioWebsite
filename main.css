@@ -394,7 +394,7 @@ a {
   width: auto;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 3vh;
   transition: all 0.5s ease;
 }
 
