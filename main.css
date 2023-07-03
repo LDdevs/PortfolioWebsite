@@ -19,210 +19,235 @@
 }
 
 /**/
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -300%;
+  }
+  98% {
+    left: -300%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
+}
+
+body {
+  max-width: 37.5rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  font-family: 'Lato', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .carousel {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  max-width: 900px;
-  max-height: 550px;
-  overflow: hidden;
   position: relative;
+  padding-top: 75%;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
 }
 
-.carousel-item {
-  visibility: visible;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -webkit-justify-content: flex-end;
-  position: relative;
-  background-color: #fff;
-  flex-shrink: 0;
-  -webkit-flex-shrink: 0;
+.carousel__viewport {
   position: absolute;
-  z-index: 0;
-  transition: 0.6s all linear;
-}
-
-.carousel-item__info {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-  display: -webkit-flex;
-  -webkit-justify-content: center;
-  -webkit-flex-direction: column;
-
-  order: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
-  margin: auto;
-  padding: 0 40px;
-  width: 40%;
-
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 
-.carousel-item__image {
-  width: 60%;
-  height: 100%;
-  order: 2;
-  align-self: flex-end;
-  flex-basis: 60%;
-
-  -webkit-order: 2;
-  -webkit-align-self: flex-end;
-  -webkit-flex-basis: 60%;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.carousel__slide {
   position: relative;
-  transform: translateX(100%);
-  transition: 0.6s all ease-in-out;
+  flex: 0 0 100%;
+  width: 100%;
+  background-color: #f99;
+  counter-increment: item;
 }
 
-.carousel-item__subtitle {
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: 3px;
-  font-size: 10px;
-  text-transform: uppercase;
-  margin: 0;
-  color: #7E7E7E;
-  font-weight: 700;
-  transform: translateY(25%);
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.4s all ease-in-out;
+.carousel__slide:nth-child(even) {
+  background-color: #99f;
 }
 
-.carousel-item__title {
-  margin: 15px 0 0 0;
-  font-family: 'Playfair Display', serif;
-  font-size: 44px;
-  line-height: 45px;
-  letter-spacing: 3px;
-  font-weight: 700;
-  color: #2C2C2C;
-  transform: translateY(25%);
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.6s all ease-in-out;
+.carousel__slide:before {
+  content: counter(item);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-40%,70px);
+  color: #fff;
+  font-size: 2em;
 }
 
-.carousel-item__description {
-  transform: translateY(25%);
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.6s all ease-in-out;
-  margin-top: 35px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
-  color: #7e7e7e;
-  line-height: 22px;
-  margin-bottom: 35px;
+.carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
 }
 
-.carousel-item--1 .carousel-item__image {
-  background-image: url('Images/break-logo.png');
+@media (hover: hover) {
+  .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap;
+  }
 }
 
-
-.carousel-item--2 .carousel-item__image {
-  background-image: url('Images/break-logo.png');
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    animation-name: none;
+  }
 }
 
-.carousel-item--3 .carousel-item__image {
-  background-image: url('Images/break-logo.png');
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+  animation-name: none;
 }
 
-.carousel-item--4 .carousel-item__image {
-  background-image: url('Images/break-logo.png');
-}
-
-.carousel-item--5 .carousel-item__image {
-  background-image: url('Images/break-logo.png');
-}
-
-
-
-
-.carousel-item__container {}
-
-.carousel-item__btn {
-  width: 35%;
-  color: #2C2C2C;
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: 3px;
-  font-size: 11px;
-  text-transform: uppercase;
-  margin: 0;
-  width: 35%;
-  font-weight: 700;
-  text-decoration: none;
-  transform: translateY(25%);
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.6s all ease-in-out;
-}
-
-.carousel__nav {
+.carousel__navigation {
   position: absolute;
   right: 0;
-  z-index: 2;
-  background-color: #fff;
   bottom: 0;
+  left: 0;
+  text-align: center;
 }
 
-.carousel__icon {
+.carousel__navigation-list,
+.carousel__navigation-item {
   display: inline-block;
-  vertical-align: middle;
-  width: 16px;
-  fill: #5d5d5d;
 }
 
-.carousel__arrow {
-  cursor: pointer;
+.carousel__navigation-button {
   display: inline-block;
-  padding: 11px 15px;
-  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #333;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
 }
 
-.carousel__arrow:nth-child(1):after {
-  content: '';
-  right: -3px;
+.carousel::before,
+.carousel::after,
+.carousel__prev,
+.carousel__next {
   position: absolute;
-  width: 1px;
-  background-color: #b0b0b0;
-  height: 14px;
-  top: 50%;
-  margin-top: -7px;
+  top: 0;
+  margin-top: 37.5%;
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 0;
+  outline: 0;
 }
 
-.active {
+.carousel::before,
+.carousel__prev {
+  left: -1rem;
+}
+
+.carousel::after,
+.carousel__next {
+  right: -1rem;
+}
+
+.carousel::before,
+.carousel::after {
+  content: '';
   z-index: 1;
-  display: flex;
-  visibility: visible;
+  background-color: #333;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+  pointer-events: none;
 }
 
-.active .carousel-item__subtitle,
-.active .carousel-item__title,
-.active .carousel-item__description,
-.active .carousel-item__btn {
-  transform: translateY(0);
-  opacity: 1;
-  transition: 0.6s all ease-in-out;
-  visibility: visible;
+.carousel::before {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
 }
 
-
-
-.active .carousel-item__image {
-  transition: 0.6s all ease-in-out;
-  transform: translateX(0);
+.carousel::after {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
 }
+
 
 /**/
 
