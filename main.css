@@ -20,11 +20,10 @@
 
 /**/
 section {
-  
-  /* padding: 50px 0; */
+  padding: 50px 0;
 }
 .container {
-  max-width: 1044px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -193,6 +192,7 @@ section {
   height: 100%;
   object-fit: cover;
 }
+
 
 /**/
 
