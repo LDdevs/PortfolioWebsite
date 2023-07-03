@@ -59,7 +59,7 @@
   margin-left: 200%;
 }
 .carousel > input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: 400%;
+  margin-left: 300%;
 }
 .carousel > input:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) {
   box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
