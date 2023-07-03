@@ -101,7 +101,7 @@
   box-sizing: border-box;
   white-space: normal;
 }
-/*.carousel__slide figure {
+.carousel__slide figure {
   display: flex;
   margin: 0;
 }
@@ -129,7 +129,7 @@
   flex: 1 1 auto;
   object-fit: cover;
 }
-.carousel__slide figcaption {
+/*.carousel__slide figcaption {
   align-self: flex-end;
   padding: 20px 20px 0 20px;
   flex: 0 0 auto;
