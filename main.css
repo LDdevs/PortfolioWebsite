@@ -62,22 +62,22 @@
   margin-left: 500%;
 }
 .carousel > input:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) {
-  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+  box-shadow: 0px 0px 0px 5px #b621fe;
 }
 .carousel > input:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) {
-  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+  box-shadow: 0px 0px 0px 5px #b621fe;
 }
 .carousel > input:nth-of-type(3):checked ~ .carousel__thumbnails li:nth-of-type(3) {
-  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+  box-shadow: 0px 0px 0px 5px #b621fe;
 }
 .carousel > input:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) {
-  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+  box-shadow: 0px 0px 0px 5px #b621fe;
 }
 .carousel > input:nth-of-type(5):checked ~ .carousel__thumbnails li:nth-of-type(5) {
-  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+  box-shadow: 0px 0px 0px 5px #b621fe;
 }
 .carousel > input:nth-of-type(6):checked ~ .carousel__thumbnails li:nth-of-type(6) {
-  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+  box-shadow: 0px 0px 0px 5px #b621fe;
 }
 .carousel__slides {
   position: relative;
