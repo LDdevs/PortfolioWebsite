@@ -199,7 +199,7 @@
 .github-logo {
   position: absolute;
   top: 0;
-  left: -5;
+  left: 5;
   width: 40px;
   height: auto;
   opacity: 100;
