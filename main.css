@@ -93,7 +93,7 @@ ol, li {
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
   max-width:100%;
-  max-height: auto;
+  max-height: 50%;
 }
 
 .carousel__viewport {
