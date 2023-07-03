@@ -44,7 +44,7 @@
   position: absolute;
 }
 .carousel > input:nth-of-type(6):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: -300%;
+  margin-left: -350%;
 }
 .carousel > input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {
   margin-left: -300%;
