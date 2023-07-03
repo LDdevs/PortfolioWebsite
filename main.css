@@ -33,7 +33,7 @@
   position: relative;
   margin-bottom: 22px;
 }
-/*.carousel > input {
+.carousel > input {
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
   height: 1px;
@@ -79,7 +79,7 @@
 .carousel > input:nth-of-type(6):checked ~ .carousel__thumbnails li:nth-of-type(6) {
   box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
 }
-.carousel__slides {
+/*.carousel__slides {
   position: relative;
   z-index: 1;
   padding: 0;
