@@ -79,7 +79,7 @@
 .carousel > input:nth-of-type(6):checked ~ .carousel__thumbnails li:nth-of-type(6) {
   box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
 }
-/*.carousel__slides {
+.carousel__slides {
   position: relative;
   z-index: 1;
   padding: 0;
@@ -101,7 +101,7 @@
   box-sizing: border-box;
   white-space: normal;
 }
-.carousel__slide figure {
+/*.carousel__slide figure {
   display: flex;
   margin: 0;
 }
