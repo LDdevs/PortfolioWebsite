@@ -22,8 +22,8 @@
  section {
   padding: 50px 0;
 }
-.container1 {
-  /* max-width: 75%; */
+.container-carousel {
+  max-width: 75%;
   margin: 0 auto;
   padding: 0 20px;
 }
