@@ -44,16 +44,16 @@
   position: absolute;
 }
 .carousel > input:nth-of-type(6):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: -850%;
+  margin-left: -600%;
 }
 .carousel > input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: -650%;
+  margin-left: -500%;
 }
 .carousel > input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: -450%;
+  margin-left: -400%;
 }
 .carousel > input:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type {
-  margin-left: -250%;
+  margin-left: -200%;
 }
 .carousel > input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type {
   margin-left: -100%;
