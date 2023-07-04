@@ -799,13 +799,6 @@ a {
 
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-* {
-  outline: none;
-}
-*, *:before, *:after {
-  
-  
-}
 
 html, body {
   -webkit-box-sizing: inherit;
@@ -844,7 +837,7 @@ h3 {
   width: 100%;
   color: #ffffff;
   margin: 20px auto;
-  position: relative;
+  
   
 
   position: absolute;
