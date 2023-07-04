@@ -805,11 +805,8 @@ a {
 }
 
 resume-body {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 10%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background: #ffffff;
