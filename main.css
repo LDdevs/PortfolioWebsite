@@ -802,7 +802,11 @@ a {
 * {
   outline: none;
 }
-
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  
+}
 html, body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
