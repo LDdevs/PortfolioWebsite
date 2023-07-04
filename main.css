@@ -804,8 +804,8 @@ a {
 }
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
   
+  box-sizing: inherit;
 }
 html, body {
   -webkit-box-sizing: border-box;
