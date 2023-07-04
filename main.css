@@ -378,7 +378,7 @@ a {
   justify-content: center;
   align-items: center;
   flex: 1;
-  color: #fff;
+  color: #B621FE;
   letter-spacing: 0.1rem;
   transition: all 0.5s ease;
   font-size: 18px;
@@ -388,7 +388,7 @@ a {
 }
 
 .et-hero-tab:hover {
-  color: #B621FE;
+  color: white;
   background: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
   transition: all 0.5s ease;
 }
