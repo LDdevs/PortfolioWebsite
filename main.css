@@ -388,7 +388,7 @@ a {
 }
 
 .et-hero-tab:hover {
-  color: white;
+  color: #B621FE;
   background: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
   transition: all 0.5s ease;
 }
