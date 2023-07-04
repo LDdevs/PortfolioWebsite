@@ -804,9 +804,9 @@ a {
 }
 
 html, body {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
   -webkit-transition: 0.5s;
