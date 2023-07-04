@@ -837,10 +837,10 @@ h3 {
   font-size: 1.25em;
 }
 .resume {
-  width: 960px;
+  width: 100%;
   color: #ffffff;
   margin: 20px auto;
-  position: absolute;
+  position: relative;
   display: flex;
 }
 .resume .base, .resume .func {
