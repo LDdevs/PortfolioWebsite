@@ -801,6 +801,9 @@ a {
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 * {
   outline: none;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body {
