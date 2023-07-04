@@ -838,11 +838,9 @@ h3 {
 }
 .resume {
   width: 960px;
- 
   color: #ffffff;
   margin: 20px auto;
-  
-  position: relative;
+  position: absolute;
   display: flex;
 }
 .resume .base, .resume .func {
