@@ -801,12 +801,9 @@ a {
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 .resume-body {
   outline: none;
-}
-.resume-body, .resume-body:before, .resume-body:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
+
 resume-body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
