@@ -789,6 +789,10 @@ a {
   background-color: #725483;
   color: #fff;
   font-size: 18px;
+  display: block;
+  padding: 50px;
+  margin-top: 80px;
+  font-size: 18px;
 }
 
 #tab-contact {
