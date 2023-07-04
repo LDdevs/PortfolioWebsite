@@ -799,10 +799,10 @@ a {
 
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-* {
+.skillz {
   outline: none;
 }
-*, *:before, *:after {
+.skillz, .skillz:before, .skillz:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
