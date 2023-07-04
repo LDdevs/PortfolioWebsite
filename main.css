@@ -836,13 +836,13 @@ h3 {
 .resume {
   width: 100vw;
   color: #ffffff;
-  margin: 20px;
+  margin: auto;
   border: 3px solid crimson;
   
 
   position: absolute;
   top: 20%;
-  left: 25%;
+  left: auto;
 }
 .resume .base, .resume .func {
   box-sizing: border-box;
