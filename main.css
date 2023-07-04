@@ -801,6 +801,8 @@ a {
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 .skillz {
   outline: none;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -903,7 +905,7 @@ h3 {
   animation: circle 1.2s infinite;
 }
 .resume .func .work ul li:hover span, .resume .func .edu ul li:hover span {
-  color: #fff;
+  color: #fdd835;
 }
 @keyframes circle {
   from {
