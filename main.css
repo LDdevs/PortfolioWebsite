@@ -809,7 +809,7 @@ a {
 }
 
 html, body {
-  border: crimson;
+  border: 3px solid crimson;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
