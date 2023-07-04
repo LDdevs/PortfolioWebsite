@@ -802,8 +802,8 @@ a {
 * {
   outline: none;
   -webkit-box-sizing: inherit;
-  
-  box-sizing: border-box;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html, body {
