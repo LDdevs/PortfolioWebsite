@@ -838,6 +838,10 @@ h3 {
   margin: 20px auto;
   position: relative;
   display: flex;
+
+  position: absolute;
+  top: 10%;
+  left: 50%;
 }
 .resume .base, .resume .func {
   box-sizing: border-box;
