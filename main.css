@@ -806,10 +806,11 @@ a {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
+  border: 3px solid crimson;
 }
 
 html, body {
-  border: 3px solid crimson;
+  
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
