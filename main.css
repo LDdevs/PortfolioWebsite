@@ -900,12 +900,12 @@ h3 {
   padding-bottom: 15px;
 }
 .resume .func .work ul li:hover::before, .resume .func .edu ul li:hover::before {
-  animation: square 1.2s infinite;
+  animation: circle 1.2s infinite;
 }
 .resume .func .work ul li:hover span, .resume .func .edu ul li:hover span {
   color: #fff;
 }
-@keyframes square {
+@keyframes circle {
   from {
     box-shadow: 0 0 0 0px #fdd835;
   }
