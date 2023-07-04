@@ -840,7 +840,7 @@ h3 {
   border: 3px solid crimson;
   
 
-  position: absolute;
+  position: relative;
   top: 20%;
   left: 25%;
 }
