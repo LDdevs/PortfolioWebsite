@@ -799,8 +799,15 @@ a {
 
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-
-.resume {
+* {
+  outline: none;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html, body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
