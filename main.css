@@ -801,8 +801,6 @@ a {
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 .skillz {
   outline: none;
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
