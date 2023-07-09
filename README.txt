@@ -1,5 +1,5 @@
 Lisa Downie's Portfolio
-This is my personal portfolio website showcasing my work and experience as a [insert profession/field]. The website is designed to give visitors a glimpse of my skills, accomplishments, and personality.
+This is my personal portfolio website showcasing my work and experience as a front-end-developer. The website is designed to give visitors a glimpse of my skills, accomplishments, and personality.
 Features
 * About me: A brief introduction to who I am, my experience, and my interests.
 * Portfolio: A collection of my projects with descriptions, images, and links to live demos or GitHub repositories.
@@ -9,4 +9,4 @@ Technologies Used
 * HTML/CSS/JavaScript: The front-end stack used for designing and implementing the website.
 Credits
 This website was designed and developed by Lisa Downie.
-The website is live on Netlify at https://lisadownie.netlify.app/
+The website is live on Netlify at https://lisadownieportfolio.netlify.app/
